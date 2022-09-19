@@ -31,7 +31,27 @@ public class main {
         }
         System.out.println("«Минимальная сумма трат за день составила " + minLen +" рублей. Максимальная сумма трат за день составила " + maxLen + " рублей»");
 
+
+        System.out.println("Задание 3");
+        float average = 0f;
+        int summa = 0;
+        for (int i = 0; i < arr.length; i++) {
+            summa += arr[i];
+        }
+        average = summa / 30;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+
+
+        System.out.println("Задание 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+
+        }
     }
+
+
+
 
 }
 
