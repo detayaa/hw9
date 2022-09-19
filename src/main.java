@@ -17,7 +17,20 @@ public class main {
         for (int i = 0; i < arr.length; i++) {
             summ += arr[i];
         }
-        System.out.println(summ);
+        System.out.println("Сумма трат за месяц составила " + summ + " рублей");
+
+        System.out.println("Задание 2");
+        int maxLen = 1;
+        int minLen = 10000000;
+        for (int i = 0; i < arr.length; i++) {
+            if (maxLen < arr[i]) {
+                maxLen = arr[i];
+            }if (minLen > arr[i]) {
+                minLen = arr[i];
+            }
+        }
+        System.out.println("«Минимальная сумма трат за день составила " + minLen +" рублей. Максимальная сумма трат за день составила " + maxLen + " рублей»");
+
     }
 
 }
